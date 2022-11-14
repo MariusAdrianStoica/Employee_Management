@@ -9,10 +9,9 @@ public class SalesPerson extends Employee{
     //private double salary;
 
 //Constructor
-    public SalesPerson(int id, String name, double salary, LocalDate dateHired) {
-        super(id, name, salary, dateHired);
-        //this.acquiredClients=acquiredClients;
-        //this.clients=clients;
+    public SalesPerson(int id, String name, LocalDate dateHired) {
+        super(id, name, dateHired);
+
     }
 //Getters and Setters
 
@@ -50,10 +49,9 @@ public class SalesPerson extends Employee{
     }
     @Override
     public void calculateSalary() {
-        salary+= 25000+ clients.length*500+acquiredClients*1000;
-        System.out.println((int)salary);
+        double benefits = clients.length*500+acquiredClients*1000;
+        setSalary(getSalary() + benefits);
 
-        // how to assign calculated salary value to the field salary in SalesP object???
     }
 
     @Override

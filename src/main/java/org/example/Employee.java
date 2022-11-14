@@ -5,15 +5,15 @@ import java.time.LocalDate;
 public abstract class Employee {
     private int id;
     private String name;
-    public double salary;
+    private double salary;
     private LocalDate dateHired;
 
     //Constructor
-    public Employee(int id, String name, double salary, LocalDate dateHired) {
+    public Employee(int id, String name, LocalDate dateHired) {
         this.id = id;
         this.name = name;
-        this.salary = salary;
         this.dateHired = dateHired;
+        this.salary = 25000;
     }
 
 
@@ -40,7 +40,7 @@ public abstract class Employee {
         return salary;
     }
 
-    public void setSalary() {
+    public void setSalary(double salary) {
         this.salary = salary;
     }
 
