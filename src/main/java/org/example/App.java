@@ -11,8 +11,8 @@ public class App
         System.out.println( "Employee management Exercise!" );
         System.out.println("****************************************\n");
 
-        SystemDeveloper mehrdad = new SystemDeveloper(1,"Mehrdad Javan", 25000, LocalDate.of(2020,1,1));
-        SalesPerson marius = new SalesPerson(100, "Marius Stoica", 25000, LocalDate.of(2022, 10, 10));
+        SystemDeveloper mehrdad = new SystemDeveloper(1,"Mehrdad Javan", 0, LocalDate.of(2020,1,1));
+        SalesPerson marius = new SalesPerson(100, "Marius Stoica", 0, LocalDate.of(2022, 10, 10));
 
         System.out.println(mehrdad.toString());
         System.out.println(marius.toString());

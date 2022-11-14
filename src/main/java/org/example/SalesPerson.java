@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class SalesPerson extends Employee{
     private String [] clients;
     private int acquiredClients;
-    private double salary;
+    //private double salary;
 
 //Constructor
     public SalesPerson(int id, String name, double salary, LocalDate dateHired) {

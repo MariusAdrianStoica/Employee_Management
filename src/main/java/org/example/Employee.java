@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public abstract class Employee {
     private int id;
     private String name;
-    private double salary;
+    public double salary;
     private LocalDate dateHired;
 
     //Constructor

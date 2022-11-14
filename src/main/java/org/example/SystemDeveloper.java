@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class SystemDeveloper extends Employee{
    private String [] certificates;
    private String[] languages;
-   private double salary;
+   //private double salary;
 
     public SystemDeveloper(int id, String name, double salary, LocalDate dateHired) {
         super(id, name, salary, dateHired);
@@ -83,10 +83,9 @@ public class SystemDeveloper extends Employee{
 
     @Override
     public void calculateSalary() {
-
         salary += 25000+ certificates.length*1000+languages.length*1500;
         System.out.println((int)salary);
-
+        setSalary();
 
         // how to assign calculated salary value to the field salary in SysDev object???
     }
